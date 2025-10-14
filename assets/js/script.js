@@ -33,7 +33,7 @@ const books = [
   {
     title: "Change Your Mind, Change the Game",
     description: "Mindset frameworks to lead teams and ship meaningful work.",
-    image: "assets/img/book1.jpg",
+    image: "assets/img/book1.JPG",
     links: [
       { label: "Amazon", url: "#" },
       { label: "Kindle", url: "#" }
