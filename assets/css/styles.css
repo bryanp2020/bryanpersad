@@ -62,7 +62,8 @@ img{max-width:100%;display:block}
 
 .link-card{transition:transform .2s ease, box-shadow .2s ease; color:var(--text); text-decoration: none;}
 .link-card:hover{transform:translateY(-3px); box-shadow: 0 20px 40px rgba(0,0,0,.35)}
-.link-card h3, .link-card p, .link-card li, .link-card span {color:var(--text);}
+.link-card h3, .link-card p, .link-card li {color:var(--text);}
+.link-card span {color:var(--brand);}
 
 .checklist{padding-left:1.1rem}
 .checklist li{margin:.5rem 0}
