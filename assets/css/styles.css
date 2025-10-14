@@ -60,8 +60,9 @@ img{max-width:100%;display:block}
 .card.stats div{background:rgba(255,255,255,.03);padding:1rem;border-radius:.75rem;border:1px solid rgba(255,255,255,.06)}
 .card.stats strong{font-size:1.5rem;display:block}
 
-.link-card{transition:transform .2s ease, box-shadow .2s ease}
+.link-card{transition:transform .2s ease, box-shadow .2s ease; color:var(--text); text-decoration: none;}
 .link-card:hover{transform:translateY(-3px); box-shadow: 0 20px 40px rgba(0,0,0,.35)}
+.link-card h3, .link-card p, .link-card li, .link-card span {color:var(--text);}
 
 .checklist{padding-left:1.1rem}
 .checklist li{margin:.5rem 0}
