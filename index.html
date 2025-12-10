@@ -2,258 +2,838 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
+  <title>Bryan Persad | Email Marketing, Deliverability & Lifecycle Strategist</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Bryan Persad — Founder, Growth & Email Specialist</title>
-  <meta name="description" content="Bryan Persad helps brands grow with lifecycle marketing, CRM, and world-class email deliverability through Build Better Growth and Build Better Emails.">
-  <meta name="author" content="Bryan Persad">
-  <meta name="theme-color" content="#0ea5e9">
-  <!-- Open Graph -->
-  <meta property="og:title" content="Bryan Persad — Growth & Email Specialist">
-  <meta property="og:description" content="Founder of Build Better Growth, Build Better Emails & Build Better Leads. Work with me or grab my books.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/img/og-image.jpg">
-  <meta property="og:url" content="https://bryanpersad.online">
+
+  <!-- Primary SEO tags -->
+  <meta name="description" content="Official site of Bryan Persad, an email marketing, deliverability and lifecycle strategist helping brands scale with inbox-safe growth, clean data and CRM systems that work." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://bryanpersad.online/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Bryan Persad | Email Marketing, Deliverability & Lifecycle Strategist" />
+  <meta property="og:description" content="Email marketing and lifecycle strategist helping DTC, wellness and education brands grow with deliverability-safe systems, clean data and clear reporting." />
+  <meta property="og:url" content="https://bryanpersad.online/" />
+  <meta property="og:site_name" content="Bryan Persad" />
+  <!-- Replace og:image with your actual image when available -->
+  <meta property="og:image" content="https://bryanpersad.online/og-image.jpg" />
+
   <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css" />
-  <script defer src="assets/js/script.js"></script>
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Bryan Persad | Email Marketing, Deliverability & Lifecycle Strategist" />
+  <meta name="twitter:description" content="Email marketing and lifecycle strategist focused on deliverability, CRM, and growth that respects the inbox." />
+  <meta name="twitter:image" content="https://bryanpersad.online/og-image.jpg" />
+
+  <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@type":"Person",
-    "name":"Bryan Persad",
-    "url":"https://bryanpersad.online/",
-    "jobTitle":"Founder, Growth & Email Specialist",
-    "sameAs":[
-      "https://www.linkedin.com/in/bryanpersad",
-      "https://twitter.com/"
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Bryan Persad",
+    "url": "https://bryanpersad.online/",
+    "jobTitle": "Email Marketing, Deliverability & Lifecycle Strategist",
+    "description": "Email marketing, deliverability and lifecycle strategist helping brands build inbox-safe growth systems.",
+    "email": "mailto:bryanpersad20@gmail.com",
+    "sameAs": [
+      "https://www.linkedin.com/in/bryanpersad"
     ],
-    "worksFor":[
+    "worksFor": [
       {
-        "@type":"Organization",
-        "name":"Build Better Growth",
-        "url":"https://buildbettergrowth.com"
+        "@type": "Organization",
+        "name": "Build Better Emails"
       },
       {
-        "@type":"Organization",
-        "name":"Build Better Emails",
-        "url":"https://buildbetteremails.com"
+        "@type": "Organization",
+        "name": "Build Better Growth"
       }
     ]
   }
   </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": "https://bryanpersad.online/",
+    "name": "Bryan Persad",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.google.com/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <style>
+    /* Reset-ish */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, sans-serif;
+      background-color: #f4f5fb;
+      color: #14151f;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Layout */
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .inner {
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Header / Nav */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(16px);
+      background: linear-gradient(
+        to bottom,
+        rgba(244, 245, 251, 0.95),
+        rgba(244, 245, 251, 0.8),
+        transparent
+      );
+      border-bottom: 1px solid rgba(15, 18, 50, 0.08);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 24px;
+      max-width: 960px;       /* keep nav same width as content */
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .nav-brand {
+      font-weight: 600;
+      letter-spacing: 0.11em;
+      text-transform: uppercase;
+      font-size: 0.85rem;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 18px;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+    }
+
+    .nav-links a {
+      opacity: 0.7;
+      transition: opacity 0.15s ease;
+      white-space: nowrap;
+    }
+
+    .nav-links a:hover {
+      opacity: 1;
+    }
+
+    /* Hamburger button */
+    .nav-toggle {
+      display: none;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      padding: 6px;
+      margin-left: 12px;
+    }
+
+    .nav-toggle-box {
+      width: 24px;
+      height: 18px;
+      position: relative;
+    }
+
+    .nav-toggle-bar {
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 2px;
+      border-radius: 999px;
+      background: #14151f;
+      transition: transform 0.18s ease, opacity 0.18s ease, top 0.18s ease, bottom 0.18s ease;
+    }
+
+    .nav-toggle-bar:nth-child(1) { top: 0; }
+    .nav-toggle-bar:nth-child(2) { top: 8px; }
+    .nav-toggle-bar:nth-child(3) { bottom: 0; }
+
+    .nav--open .nav-toggle-bar:nth-child(1) {
+      top: 8px;
+      transform: rotate(45deg);
+    }
+
+    .nav--open .nav-toggle-bar:nth-child(2) {
+      opacity: 0;
+    }
+
+    .nav--open .nav-toggle-bar:nth-child(3) {
+      bottom: 8px;
+      transform: rotate(-45deg);
+    }
+
+    /* Hero */
+    .hero {
+      padding: 96px 0 72px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 2fr) minmax(0, 1.2fr);
+      gap: 64px;
+      align-items: center;
+    }
+
+    .hero-title {
+      font-size: clamp(2.4rem, 4vw, 3.2rem);
+      margin: 0 0 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .hero-subtitle {
+      margin: 0 0 24px;
+      font-size: 1rem;
+      max-width: 520px;
+      color: #44475a;
+    }
+
+    .hero-tags {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.22em;
+      opacity: 0.8;
+    }
+
+    .hero-photo-wrap {
+      display: flex;
+      justify-content: center;
+    }
+
+    .hero-photo {
+      width: 260px;
+      height: 260px;
+      border-radius: 999px;
+      border: 1px solid rgba(15, 18, 50, 0.10);
+      overflow: hidden;
+      background: radial-gradient(circle at 0 0, #ffffff, #e2e6ff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .hero-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero-photo-fallback {
+      font-size: 3rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+    }
+
+    /* Sections */
+    section {
+      padding: 40px 0;
+      border-top: 1px solid rgba(15, 18, 50, 0.08);
+    }
+
+    section:first-of-type {
+      border-top: none;
+    }
+
+    .section-label {
+      font-size: 0.74rem;
+      letter-spacing: 0.26em;
+      text-transform: uppercase;
+      opacity: 0.7;
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      font-size: 1.6rem;
+      margin: 0 0 16px;
+    }
+
+    .section-body {
+      max-width: 720px;
+      color: #44475a;
+      font-size: 0.98rem;
+    }
+
+    .section-body p {
+      margin: 0 0 14px;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: minmax(0, 1.3fr) minmax(0, 1.3fr);
+      gap: 32px;
+      align-items: flex-start;
+    }
+
+    .pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 8px;
+    }
+
+    .pill {
+      padding: 3px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(15, 18, 50, 0.14);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      opacity: 0.9;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+      margin-top: 12px;
+    }
+
+    .card {
+      padding: 16px 18px;
+      border-radius: 14px;
+      border: 1px solid rgba(15, 18, 50, 0.08);
+      background: radial-gradient(circle at top left, #ffffff, #eef1ff);
+      font-size: 0.9rem;
+      color: #24263a;
+    }
+
+    .card-title {
+      font-size: 0.96rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .card-meta {
+      font-size: 0.76rem;
+      opacity: 0.78;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      margin-bottom: 8px;
+    }
+.card-book-image {
+  margin: 12px 0 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.card-book-image img {
+  width: 100%;
+  max-width: 260px;
+  border-radius: 12px;
+  border: 1px solid rgba(15, 18, 50, 0.1);
+  background: #fff;
+}
+
+    /* Contact */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.5fr) minmax(0, 1.1fr);
+      gap: 32px;
+      align-items: start;
+    }
+
+    .contact-note {
+      color: #44475a;
+      font-size: 0.95rem;
+    }
+
+    .contact-field-label {
+      font-size: 0.74rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      opacity: 0.7;
+      margin-bottom: 3px;
+    }
+
+    .contact-email {
+      font-size: 1rem;
+      padding: 10px 12px;
+      border-radius: 10px;
+      border: 1px solid rgba(15, 18, 50, 0.18);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 10px;
+      background: rgba(255, 255, 255, 0.9);
+      max-width: 100%;
+    }
+
+    .contact-email span {
+      font-family: "SF Mono", ui-monospace, Menlo, Monaco, Consolas,
+        "Liberation Mono", "Courier New", monospace;
+      font-size: 0.9rem;
+      overflow-wrap: anywhere;
+    }
+
+    .contact-small {
+      font-size: 0.78rem;
+      opacity: 0.7;
+    }
+
+    /* Footer */
+    footer {
+      padding: 24px 24px 32px;
+      font-size: 0.78rem;
+      border-top: 1px solid rgba(15, 18, 50, 0.08);
+      margin-top: 40px;
+      background: rgba(244, 245, 251, 0.9);
+    }
+
+    .footer-inner {
+      max-width: 960px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: space-between;
+      opacity: 0.8;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+.card-button {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 18px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: center;
+  color: #14151f;
+  background: linear-gradient(to bottom right, #ffffff, #eef1ff);
+  border: 1px solid rgba(15, 18, 50, 0.12);
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.card-button:hover {
+  background: #ffffff;
+  border-color: rgba(15, 18, 50, 0.22);
+  transform: translateY(-1px);
+}
+
+.card-button:active {
+  transform: translateY(0);
+}
+
+    /* Responsive tweaks */
+    @media (max-width: 930px) {
+      .nav {
+        padding-inline: 16px;
+      }
+.card-button {
+    padding: 9px 16px;
+    font-size: 0.88rem;
+  }
+      .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        margin-top: 8px;
+        padding: 12px 16px 16px;
+        background: rgba(244, 245, 251, 0.98);
+        border-top: 1px solid rgba(15, 18, 50, 0.06);
+        border-bottom: 1px solid rgba(15, 18, 50, 0.06);
+        flex-direction: column;
+        gap: 12px;
+        display: none;
+      }
+
+      .nav--open .nav-links {
+        display: flex;
+      }
+
+      .nav-toggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .inner {
+        padding: 0 16px;
+      }
+
+      .hero.inner {
+        padding: 72px 28px 48px;  /* top | left/right | bottom */
+      }
+
+      .hero-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 40px;
+      }
+
+      .hero-photo {
+        width: 220px;
+        height: 220px;
+      }
+
+      .split,
+      .card-grid,
+      .contact-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 24px;
+      }
+
+      section {
+        padding: 32px 0;
+      }
+
+      .section-title {
+        font-size: 1.4rem;
+      }
+
+      .section-body {
+        font-size: 0.95rem;
+      }
+.card-book-image img {
+    max-width: 220px;
+  }
+    }
+
+    @media (max-width: 480px) {
+      .hero-title {
+        font-size: 2.1rem;
+      }
+
+      .hero-subtitle {
+        font-size: 0.95rem;
+      }
+
+      .hero.inner {
+        padding: 64px 28px 40px;
+      }
+
+      footer {
+        padding: 20px 16px 28px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="#home">
-      <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true" class="brand-mark"><path d="M12 2l8.5 4.9v9.8L12 22l-8.5-4.9V6.9L12 2zM6.5 8.2v7.6L12 19l5.5-3.2V8.2L12 5 6.5 8.2z" /></svg>
-      <span class="brand-name">Bryan Persad</span>
-    </a>
-    <nav id="nav" class="nav">
-      <button id="navToggle" class="nav-toggle" aria-label="Toggle Navigation">☰</button>
-      <ul id="navMenu">
-        <li><a href="#about">About</a></li>
-        <li><a href="#agencies">Agencies</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#books">Books</a></li>
-        <li><a href="#testimonials">Social Proof</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌓</button></li>
-      </ul>
-    </nav>
-  </header>
+  <div class="page">
+    <!-- Header / Nav -->
+    <header>
+      <nav class="nav" aria-label="Primary navigation">
+        <div class="nav-brand">BRYAN PERSAD</div>
 
-  <main id="home">
-    <section class="hero container">
-      <div class="hero-text">
-        <h1>Growth that <span class="accent">compounds</span>.</h1>
-        <p>I help brands scale revenue through lifecycle strategy, CRM, and elite email deliverability. Founder of <strong>Build Better Growth</strong> and <strong>Build Better Emails</strong>.</p>
-        <div class="hero-cta">
-          <a class="btn primary" href="#contact">Book a consult</a>
-          <a class="btn ghost" href="#books">Browse my books</a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-menu">
+          <span class="nav-toggle-box">
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+          </span>
+        </button>
+
+        <div class="nav-links" id="primary-menu">
+          <a href="#bio">Bio</a>
+          <a href="#work">Services</a>
+          <a href="#brands">Brands</a>
+          <a href="#books">Books</a>
+          <a href="#philanthropy">Giving Back</a>
+          <a href="#contact">Contact</a>
         </div>
-        <div class="trust">
-          <span>Trusted by DTC, marketplaces & membership brands</span>
-          <div class="badges">
-            <span class="badge">Deliverability</span>
-            <span class="badge">Lifecycle</span>
-            <span class="badge">CRM</span>
-            <span class="badge">Attribution</span>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <main>
+      <section class="hero inner" id="home">
+        <div class="hero-grid">
+          <div>
+            <h1 class="hero-title">Growth that respects the inbox.</h1>
+            <p class="hero-subtitle">
+              I build scalable email marketing and lifecycle systems that connect data,
+              content and customer experience so brands can grow without burning out their audience or their domain.
+            </p>
+            <div class="hero-tags">
+              <span>Email Marketing &amp; Growth Strategist</span>
+              <span>Lifecycle &amp; CRM Architect</span>
+              <span>Deliverability Specialist</span>
+              <span>Author &amp; Educator</span>
+            </div>
+          </div>
+
+          <div class="hero-photo-wrap">
+            <div class="hero-photo">
+              <!-- <img src="bryan-headshot.jpg" alt="Headshot of email marketing strategist Bryan Persad" /> -->
+              <div class="hero-photo-fallback" aria-hidden="true">BP</div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="hero-art">
-        <img src="assets/img/bryan-headshot.jpg" alt="Photo of Bryan Persad" />
-      </div>
-    </section>
+      </section>
 
-    <section id="about" class="about container section">
-      <div class="section-head">
-        <h2>About Bryan</h2>
-        <p>17+ years building growth systems that connect data, content, and customer experience.</p>
-      </div>
-      <div class="grid two">
-        <div>
-          <p>My foundation is email, but my work spans across the entire digital marketing ecosystem.</p>
-          <p>I’ve led lifecycle and deliverability programs for e-commerce, subscription, and education brands, designing campaigns that drive revenue while protecting reputation. My approach blends technical depth with creative strategy...from building infrastructure like SPF, DKIM, and DMARC to developing segmentation, content frameworks, and analytics that turn engagement into measurable growth.</p>
-          <p>I believe in growth that respects the inbox and the brand. Whether it’s optimizing GA4 attribution, improving conversion through better automation, or refining lifecycle messaging, my focus is always the same...build systems that scale, perform, and last.</p>
+      <!-- BIO -->
+      <section id="bio" aria-labelledby="bio-heading">
+        <div class="inner">
+          <div class="section-label">Bio</div>
+          <h2 class="section-title" id="bio-heading">About Bryan Persad</h2>
+          <div class="section-body">
+            <p>
+              I have spent more than 17 years inside the trenches of email marketing and digital growth,
+              working with e-commerce, subscription and education brands across multiple ESPs and stacks.
+            </p>
+            <p>
+              My work sits at the intersection of strategy and infrastructure:
+              domain and sending setup, segmentation and lifecycle flows, analytics and attribution.
+              I care about clean data, clear messaging and deliverability that holds up under real volume.
+            </p>
+            <p>
+              Today I help leadership and growth teams see the full picture.
+              Not just opens and clicks, but how email, SMS and lifecycle programs tie into revenue,
+              retention, LTV and long term brand equity.
+            </p>
+          </div>
         </div>
-        <div class="card stats">
-          <div><strong>100M+</strong><span>emails guided</span></div>
-          <div><strong>10–50%</strong><span>CTR lifts (typical wins)</span></div>
-          <div><strong>99–100%</strong><span>Inbox placement on healthy programs</span></div>
+      </section>
+
+      <!-- WORK -->
+      <section id="work" aria-labelledby="work-heading">
+        <div class="inner">
+          <div class="section-label">Services</div>
+          <h2 class="section-title" id="work-heading">Email, lifecycle and deliverability work</h2>
+          <div class="split">
+            <div class="section-body">
+              <p>
+                I partner with brands as a hybrid strategist and operator,
+                mapping lifecycle journeys, fixing infrastructure and building execution systems your team can actually run.
+              </p>
+              <p>
+                That usually means diagnosing what is really happening with your domain, audience and analytics,
+                then designing a simple roadmap that respects constraints and still moves key metrics.
+              </p>
+            </div>
+            <div class="section-body">
+              <p>Common focus areas include:</p>
+              <ul>
+                <li>Lifecycle architecture, welcome and post-purchase flows</li>
+                <li>Deliverability, domain and reputation repair</li>
+                <li>ESP migrations and multi-brand setups</li>
+                <li>GA4 and attribution frameworks for email and SMS</li>
+                <li>Testing roadmaps tied to revenue, LTV and retention</li>
+              </ul>
+              <div class="pill-list" aria-label="Core specialties">
+                <div class="pill">Deliverability</div>
+                <div class="pill">Lifecycle</div>
+                <div class="pill">Retention</div>
+                <div class="pill">Attribution</div>
+                <div class="pill">ESP Migrations</div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="agencies" class="agencies container section">
-      <div class="section-head">
-        <h2>The Build Better Family</h2>
-        <p>Two specialist agencies to meet you where you are.</p>
-      </div>
-      <div class="grid two">
-        <a class="card link-card" href="https://buildbettergrowth.com" target="_blank">
-          <h3>Build Better Growth</h3>
-          <p>Full-funnel growth for health, wellness & lifestyle brands: lifecycle, paid, SEO, and CRO.</p>
-          <ul class="bullets">
-            <li>Funnel architecture & analytics</li>
-            <li>Acquisition → retention alignment</li>
-            <li>Playbooks, dashboards, and ops</li>
-          </ul>
-          <span class="link">Work with BBG →</span>
-        </a>
-        <a class="card link-card" href="https://buildbetteremails.com" target="_blank">
-          <h3>Build Better Emails</h3>
-          <p>Industry‑agnostic email strategy, deliverability, and lead gen. Consulting to done‑for‑you.</p>
-          <ul class="bullets">
-            <li>ESP setup & migrations</li>
-            <li>SPF/DKIM/DMARC & subdomain strategy</li>
-            <li>Segmentation, flows, and testing</li>
-          </ul>
-          <span class="link">Work with BBE →</span>
-        </a>
-      </div>
-    </section>
+      <!-- BRANDS -->
+      <section id="brands" aria-labelledby="brands-heading">
+        <div class="inner">
+          <div class="section-label">Brands</div>
+          <h2 class="section-title" id="brands-heading">Brands and categories I support</h2>
+          <div class="section-body">
+            <p>
+              I spend most of my time helping modern DTC, wellness, lifestyle and education brands build durable growth,
+              through a mix of advisory work and hands on email and lifecycle consulting.
+            </p>
+          </div>
 
-    <section id="services" class="services container section">
-      <div class="section-head">
-        <h2>Ways to work together</h2>
-        <p>Pick the engagement that fits your stage.</p>
-      </div>
-      <div class="grid three">
-        <div class="card">
-          <h3>Diagnostic</h3>
-          <p>Audit your marketing systems in 30 days — from deliverability and flows to attribution and audience structure.</p>
-          <ul class="checklist">
-            <li>Inbox, domain, and reputation review</li>
-            <li>Channel and data tracking map</li>
-            <li>Prioritized 90‑day plan</li>
-          </ul>
-          <p><em>(Ideal for brands needing clarity before scaling — used by both Build Better Growth and Build Better Emails clients.)</em></p>
+          <div class="card-grid">
+            <div class="card">
+              <div class="card-title">Brand &amp; Growth Leadership</div>
+              <div class="card-meta">Email and lifecycle strategy</div>
+              <p>
+                Supporting high volume direct to consumer brands with lifecycle strategy,
+                promotion cadence and inbox safe execution across email and SMS.
+              </p>
+            </div>
+
+            <div class="card">
+              <div class="card-title">Advisory &amp; Projects</div>
+              <div class="card-meta">Systems &amp; infrastructure</div>
+              <p>
+                Helping teams untangle legacy setups, clean up domains and design frameworks
+                that are simple enough to maintain but strong enough to scale.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="card">
-          <h3>Guided Build</h3>
-          <p>We co-create campaigns, flows, and dashboards with your team — blending hands-on strategy with training and process design.</p>
-          <ul class="checklist">
-            <li>Weekly working sessions</li>
-            <li>Templates & SOPs included</li>
-            <li>QA and launch support</li>
-          </ul>
-          <p><em>(Perfect for in-house teams that want to learn while building — a joint Build Better Growth + Build Better Emails engagement.)</em></p>
-        </div>
-        <div class="card">
-          <h3>Done‑For‑You</h3>
-          <p>Full setup and management across email, paid, and analytics — strategy through execution.</p>
-          <ul class="checklist">
-            <li>Monthly testing roadmap and optimization</li>
-            <li>Inbox‑safe sending guardrails</li>
-            <li>Lifecycle segmentation, revenue, and LTV tracking</li>
-          </ul>
-          <p><em>(Best for brands that want results managed start-to-finish — typically run under Build Better Emails, powered by Build Better Growth infrastructure.)</em></p>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="books" class="books container section">
-      <div class="section-head">
-        <h2>Books by Bryan</h2>
-        <p>Practical playbooks you can use today. Available in print and Kindle.</p>
-      </div>
-      <div class="grid three" id="booksGrid">
-        <!-- Populated by script.js. Edit books in books.json or here inline. -->
-      </div>
-      <div class="center">
-        <a class="btn ghost" href="#" id="viewAllBooks">View all books</a>
-      </div>
-    </section>
+      <!-- BOOKS -->
+      <section id="books" aria-labelledby="books-heading">
+        <div class="inner">
+          <div class="section-label">Books</div>
+          <h2 class="section-title" id="books-heading">Writing and teaching</h2>
+          <div class="section-body">
+            <p>
+              I write practical playbooks for marketers and operators who want real world systems, not theory,
+              with a focus on email strategy, deliverability and honest views of what it actually takes to grow.
+            </p>
+          </div>
 
-    <section id="testimonials" class="testimonials container section">
-      <div class="section-head">
-        <h2>What clients say</h2>
-        <p>Real outcomes from real teams.</p>
-      </div>
-      <div class="grid two">
-        <blockquote class="quote card">
-          <p>“Inbox placement jumped back to 99% and revenue followed. Bryan’s frameworks just work.”</p>
-          <cite>— Marketing Director, DTC Wellness</cite>
-        </blockquote>
-        <blockquote class="quote card">
-          <p>“We migrated ESPs, fixed DMARC, and rebuilt flows in 6 weeks. Clean, fast, measurable.”</p>
-          <cite>— COO, Subscription Education</cite>
-        </blockquote>
-      </div>
-    </section>
-
-    <section id="contact" class="contact container section">
-      <div class="section-head">
-        <h2>Let’s talk</h2>
-        <p>Tell me where you’re stuck. I’ll reply within 1 business day.</p>
-      </div>
-      <form class="card form" id="contactForm" method="POST" action="https://formspree.io/f/your-id">
-        <div class="grid two">
-          <label>Full name
-            <input required name="name" placeholder="Jane Doe" />
-          </label>
-          <label>Email
-            <input required name="email" type="email" placeholder="you@company.com" />
-          </label>
-        </div>
-        <label>Company
-          <input name="company" placeholder="Acme Co." />
-        </label>
-        <label>What do you need help with?
-          <textarea required name="message" rows="5" placeholder="Briefly describe your goals…"></textarea>
-        </label><br>
-        <!--<div class="grid two">
-          <label class="checkbox"><input type="checkbox" name="service" value="Diagnostic"> Diagnostic</label>
-          <label class="checkbox"><input type="checkbox" name="service" value="Guided Build"> Guided Build</label>
-          <label class="checkbox"><input type="checkbox" name="service" value="Done-For-You"> Done-For-You</label>
-          <label class="checkbox"><input type="checkbox" name="service" value="Deliverability"> Deliverability</label>
-        </div>-->
-        <button class="btn primary" type="submit">Send message</button>
-        <p class="form-note">No spam. Your info is safe and never shared.</p>
-      </form>
-      <div class="alt-contact">
-        <p>Prefer email? <a href="mailto:bryan@buildbetteremails.com">Send me a message.</a></p>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>© 2025 Bryan Persad • Build Better Growth • Build Better Emails</p>
-      <nav class="footer-nav">
-        <a href="#about">About</a>
-        <a href="#agencies">Agencies</a>
-        <a href="#services">Services</a>
-        <a href="#books">Books</a>
-        <a href="#contact">Contact</a>
-      </nav>
+          <div class="card-grid">
+            <div class="card">
+              <div class="card-title">Inbox Authority</div>
+              <div class="card-meta">Email &amp; deliverability</div>
+	      <!-- NEW BOOK IMAGE -->
+    <div class="card-book-image">
+      <img src="https://bryanpersad.online/assets/img/inboxbook.jpg" 
+           alt="Inbox Authority Book Cover Placeholder">
     </div>
-  </footer>
+              <p>
+                A grounded look at building email programs that respect both the inbox and the business.
+                Frameworks and examples you can put to work without hype.
+              </p>
+<!-- NEW BUTTON -->
+<a class="card-button" href="#" target="_blank">
+  Coming Soon
+</a>
+            </div>
+
+            <div class="card">
+              <div class="card-title">Change Your Mind. Change the Game</div>
+              <div class="card-meta">Mindset Transformation</div>
+ <!-- NEW BOOK IMAGE -->
+    <div class="card-book-image">
+      <a href="https://a.co/d/a2WLPcB" target="_blank"><img src="https://bryanpersad.online/assets/img/book1.JPG" 
+           alt="Change Your Mind Book Cover Placeholder"></a>
+    </div>
+              <p>
+                I have shared my powerful personal journey from burnout to breakthrough - offering you a blueprint to challenge the script society handed you and create a life of purpose, ownership, and bold action.  
+              </p>
+<!-- NEW BUTTON -->
+<a class="card-button" href="https://a.co/d/a2WLPcB" target="_blank">
+  Start Your Transformation 
+</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PHILANTHROPY / GIVING BACK -->
+      <section id="philanthropy" aria-labelledby="giving-heading">
+        <div class="inner">
+          <div class="section-label">Giving back</div>
+          <h2 class="section-title" id="giving-heading">Paying experience forward</h2>
+          <div class="section-body">
+            <p>
+              A core part of my work is sharing what I have learned with people who are just getting started,
+              through teaching, writing and supporting projects that create access to skills and opportunity.
+            </p>
+            <p>
+              Over time, I am focused on supporting initiatives around education, mentorship and entrepreneurship,
+              especially for people building from non traditional backgrounds.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" aria-labelledby="contact-heading">
+        <div class="inner">
+          <div class="section-label">Contact</div>
+          <h2 class="section-title" id="contact-heading">Contact Bryan</h2>
+          <div class="contact-grid">
+            <div class="contact-note">
+              <p>
+                If you lead or support a brand and need help with lifecycle, deliverability or email driven growth,
+                the best way to reach me is by email. Share a little context and I will respond with next steps
+                or a direct “not a fit” if I cannot help.
+              </p>
+            </div>
+            <div>
+              <div class="contact-field-label">Email</div>
+              <a class="contact-email" href="mailto:bryanpersad20@gmail.com">
+                <span>bryanpersad20@gmail.com</span>
+              </a>
+              <div class="contact-small">
+                No lists. No funnels. Just a direct line.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-inner">
+        <div>© <span id="year"></span> Bryan Persad. All rights reserved.</div>
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/in/bryanpersad" target="_blank" rel="noreferrer">Connect on LinkedIn</a>
+          <a href="mailto:bryanpersad20@gmail.com">Email Bryan</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Small helper for current year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Mobile nav toggle
+    const nav = document.querySelector('.nav');
+    const navToggle = document.querySelector('.nav-toggle');
+
+    if (nav && navToggle) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('nav--open');
+        navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    }
+  </script>
 </body>
 </html>
